@@ -1,0 +1,64 @@
+<!--pages/components/me/me.wxml-->
+<view class="mebanw">
+  <view class="bgban"></view>
+  <view class="meban">
+    <view class="figure">
+      <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="h-95"></view>
+    <view class="meinfo">
+      <view class="h-100"></view>
+      <view class="name">{{userInfo.nickName}}</view>
+      <view class="myaddr">我的收货地址></view>
+    </view>
+  </view>
+</view>
+<view class="myorder">
+  <view class="alldd">
+    <view class="lab fl">我的订单</view>
+    <navigator class="ck fr" url="/pages/components/order/order?id=0">
+      查看全部订单
+      <view class="icor fr"><image src="{{imgurl}}/images/maltr.png"></image></view>
+    </navigator>
+  </view>
+  <view class="orderw">
+    <navigator class="item" wx:for="{{order}}" wx:key="id" url="{{item.url}}">
+      <view class="h-45"></view>
+      <view class="figure">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="text">{{item.text}}</view>
+    </navigator>
+  </view>
+</view>
+<view class="hh-15"></view>
+<!--功能-->
+<view class="mustfun">
+  <navigator class="item" wx:for="{{mustfun}}" wx:key="id" url="{{item.url}}">
+    <view class="h-20"></view>
+    <view class="figure">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="h-20"></view>
+    <view class="text">{{item.text}}</view>
+  </navigator>
+</view>
+<view class="hh-15"></view>
+<view class="wsection">
+  <navigator url="/pages/components/setaddr/setaddr" class="clearfix">
+    <text>地址管理</text>
+    <view class="alt fr"><image src="{{imgurl}}/images/maltr.png"></image></view>
+  </navigator>
+</view>
+<view class="wsection">
+  <navigator url="/pages/components/about/about" class="clearfix">
+    <text>关于我们</text>
+    <view class="alt fr"><image src="{{imgurl}}/images/maltr.png"></image></view>
+  </navigator>
+</view>
+<view class="wsection">
+  <navigator url="/pages/components/meapply/meapply" class="clearfix">
+    <text>招商入驻</text>
+    <view class="alt fr"><image src="{{imgurl}}/images/maltr.png"></image></view>
+  </navigator>
+</view>

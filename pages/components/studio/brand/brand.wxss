@@ -1,0 +1,215 @@
+/* pages/components/studio/brand/brand.wxss */
+.h-50{
+  height: 50rpx;
+}
+.h-40{
+  height: 40rpx;
+}
+.h-35{
+  height: 35rpx;
+}
+.h-25{
+  height: 25rpx;
+}
+.h-240{
+  height: 240rpx;
+}
+.hbg-170{
+  height: 170rpx;
+  background: #1bdacd;
+}
+.alltit{
+  width: 750rpx;
+  height: 45rpx;
+  overflow: hidden;
+}
+.alltit .ico{
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 15rpx;
+  margin-left: 10rpx;
+}
+.alltit .ico image{
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+.alltit .tit{
+  font-size: 36rpx;
+  color: #1d1d1d;
+  line-height: 45rpx;
+}
+.alltit .tips{
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  color: #999999;
+  line-height: 20rpx;
+  margin-top: 20rpx;
+}
+.rankw{
+  width: 750rpx;
+  background:linear-gradient(to bottom,#e7e7e7,#fef9f9);
+}
+.rank{
+  height: 410rpx;
+  position: relative;
+}
+.rankabs{
+  position: absolute;
+  height: 390rpx;
+  width: 750rpx;
+  top: 0;
+  left: 0;
+}
+.ranks{
+  width: 750rpx;
+  height: 390rpx;
+}
+.ranks .item{
+  width: 240rpx;
+  height: 375rpx;
+  margin:15rpx 25rpx;
+  overflow: hidden;
+  background: rgba(255, 255, 255,0.8);
+  border-radius: 20rpx;
+  box-shadow: 2rpx 2rpx 15rpx rgba(157, 157, 157, 0.15);
+}
+.ranks .item .figure{
+  width: 220rpx;
+  height: 220rpx;
+  margin: 0 auto;
+  padding: 13rpx 0;
+}
+.ranks .item .figure image{
+  display: inline-block;
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 10rpx;
+}
+.ranks .item .wrap{
+  position: relative;
+}
+.ranks .item .logo{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  padding: 8rpx;
+  margin-left: -45rpx;
+  left: 50%;
+  top:-55rpx;
+  background: #fff;
+  border-radius: 25rpx;
+  overflow: hidden;
+  box-shadow: 2rpx 2rpx 15rpx rgba(157, 157, 157, 0.3);
+}
+.ranks .item .logo image{
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 15rpx;
+}
+.ranks .item .tit{
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 220rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #1d1d1d;
+  text-align: center;
+}
+.ranks .item .text{
+  height: 24rpx;
+  line-height: 24rpx;
+  width: 220rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 20rpx;
+  color: #849e9c;
+  text-align: center;
+}
+
+/***推荐画室***/
+.recom{
+  padding: 0 15rpx;
+}
+.recom .con{
+  position: relative;
+  margin-bottom: 20rpx;
+  width: 720rpx;
+  height: 405rpx;
+}
+.recom .con .fam{
+  width: 720rpx;
+  height: 285rpx;
+  background: linear-gradient(to right,#1bdacd,#1eccda);
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.recom .con .fam .figure{
+  width: 110rpx;
+  height: 110rpx;
+  padding: 6rpx;
+  background: #fff;
+  box-shadow: 2rpx 2rpx 15rpx rgba(157, 157, 157, 0.3);
+  margin: 30rpx 25rpx;
+  border-radius: 50%;
+}
+.recom .con .fam .figure image{
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+}
+.recom .con .fam .dl{
+  width: 380rpx;
+  height: 120rpx;
+  margin: 30rpx 0;
+}
+.recom .con .fam .dl .tit{
+  height: 60rpx;
+  width: 380rpx;
+  overflow: hidden;
+  line-height: 60rpx;
+  color: #ffffff;
+}
+.recom .con .fam .dl .text{
+  height: 30rpx;
+  width: 380rpx;
+  overflow: hidden;
+  font-size: 22rpx;
+  color: #ffffff;
+}
+.recom .con .fam .go{
+  width: 115rpx;
+  height: 115rpx;
+  margin: 30rpx 25rpx;
+}
+.recom .con .fam .go image{
+  display: block;
+  width: 115rpx;
+  height: 115rpx;
+}
+.recom .con .famabs{
+  position: absolute;
+  width: 720rpx;
+  height: 235rpx;
+  left: 0;
+  bottom: 0rpx;
+  overflow: hidden;
+}
+.recom .con .famabs .item{
+  width: 195rpx;
+  height: 195rpx;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  box-shadow: 2rpx 2rpx 15rpx rgba(157, 157, 157, 0.3);
+  margin-left: 20rpx;
+}
+.recom .con .famabs .item image{
+  display: block;
+  width: 195rpx;
+  height: 195rpx;
+  border-radius: 15rpx;
+}

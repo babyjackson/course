@@ -1,0 +1,49 @@
+<!--pages/components/works/show/show.wxml-->
+<view class="showban {{imgurl}}">
+  <swiper class="ban" indicator-dots="true" indicator-color="#c6c6c6" indicator-active-color="#1bdacd">
+    <block wx:for="{{showban}}" wx:key="id">
+      <swiper-item>
+        <view class="item">
+          <view class="figure">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="dlabs">
+            <view class="h-120"></view>
+            <view class="tit">{{item.tit}}</view>
+            <view class="h-15"></view>
+            <view class="dd clearfix">
+              <view class="coll fl">
+                <view class="ico fl "><image src="{{imgurl}}/images/collectico.png"></image></view>
+                {{item.coll}}
+              </view>
+              <view class="glance fl">
+                <view class="ico fl"><image src="{{imgurl}}/images/glance1.png"></image></view>
+                {{item.glance}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="h-70"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--列表-->
+<view class="workli">
+  <view class="item clearfix" wx:for="{{workli}}" wx:key="id">
+    <view class="figure">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="dl fr">
+      <view class="tit">{{item.tit}}</view>
+      <view class="text">{{item.text}}</view>
+      <view class="h-35"></view>
+      <view class="dd">
+        <view class="zan"><view class="ico fl"><image src="{{imgurl}}/images/yzan.png"></image></view>{{item.zan}}</view>
+        <view class="btn">去看看<view class="altr fr"><image src="{{imgurl}}/images/workaltr.png"></image></view></view>
+      </view>
+    </view>
+  </view>
+  <view class="loadmore">加载更多</view>
+</view>
+<view class="h-10"></view>

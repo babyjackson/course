@@ -1,0 +1,29 @@
+<!--pages/components/news/newsdetail/newsdetail.wxml-->
+<view class="bandetail">
+  <image src="{{imgurl}}/images/newsdetailban.jpg"></image>
+</view>
+<view class="tipsban">
+  <view class="tips">
+    <view class="coll fl">
+      <view class="ico fl"><image src="{{imgurl}}/images/love@30rpx.png"></image></view>
+      150
+    </view>
+    <view class="galance fl">
+      <view class="ico fl"><image src="{{imgurl}}/images/eyes@30rpx.png"></image></view>
+      1500
+    </view>
+  </view>
+</view>
+<view class="condetail">
+  <view class="tit">“京口风流—清代京江绘画特展”南京博物院展出”</view>
+  <view class="wp clearfix">
+    <view class="time fl">时间：2018-04-15</view>
+    <view class="admin fl">编辑：admin</view>
+  </view>
+  <view class="con">
+    天津美术网讯  9月1日至11月14日，南京博物院艺术馆推出2015年换季展“京口风流——清代京江绘画特展”，将明末清初以来至19世纪镇江地区的绘画藏品予以展出。展出笪重光、蔡嘉、鲍皋、蒋璋、王文治、潘恭寿、黄鹤、潘思牧、张崟、顾鹤庆、明俭、周镐等的80件（套）绘画作品。这是南京博物院，也是江苏博物馆界以“京江绘画”为专题举办的第一个大型展览，比较全面地反映出镇江地区17世纪至19世纪上半叶的绘画风格特色和艺术成就。
+    <view class="h-40"></view>
+    天津美术网讯  9月1日至11月14日，南京博物院艺术馆推出2015年换季展“京口风流——清代京江绘画特展”，将明末清初以来至19世纪镇江地区的绘画藏品予以展出。展出笪重光、蔡嘉、鲍皋、蒋璋、王文治、潘恭寿、黄鹤、潘思牧、张崟、顾鹤庆、明俭、周镐等的80件（套）绘画作品。这是南京博物院，也是江苏博物馆界以“京江绘画”为专题举办的第一个大型展览，比较全面地反映出镇江地区17世纪至19世纪上半叶的绘画风格特色和艺术成就。
+  </view>
+  <view class="collbtn">收藏</view>
+</view>

@@ -1,0 +1,19 @@
+<view class="jzmsc">
+  <view class="tit">少儿电脑绘画平台</view>
+  <view>
+    <text>2004年，当两个年轻人为自己的一日三餐吃什么而愁时，创建了一个小小的个人网站。</text>
+  </view>
+   <view>
+    <text>没有想到，这粒微不足道的小种子，受到了无数人的喜爱与呵护，成长为备受用户喜爱的美食网络。</text>
+  </view>
+</view>
+<view class="lxfs">
+  <view class="tit">联系方式</view>
+  <view class="lxfs-item clearfix" wx:for="{{lxfs}}" wx:for-index="key" wx:key="id">
+    <view class="fl img"><image src="{{imgurl}}{{item.imgUrl}}"></image></view>
+    <block class="fl clearfix">
+      <view class="fl fsz">{{item.fsz}}</view>
+      <view class="fl fs">{{item.fs}}</view>
+    </block>
+  </view>
+</view>

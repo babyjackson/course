@@ -1,0 +1,180 @@
+<!--pages/component/wdsc/wdsc.wxml-->
+<view class="tabswitch" bindtap='navFun'>
+  <view class="titem {{tabArr.current == 0 ? 'active':''}}" data-index="0">课程<view class="num">1</view></view>
+  <view class="titem {{tabArr.current == 1 ? 'active':''}}" data-index="1">画室</view>
+  <view class="titem {{tabArr.current == 2 ? 'active':''}}" data-index="2">资讯</view>
+  <view class="titem {{tabArr.current == 3 ? 'active':''}}" data-index="3">作品</view>
+</view>
+<view class="h15"></view>
+<!--课程-->
+<view class="con-item {{tabArr.current == 0 ? 'on':''}}">
+  <view class="hasorder collect1" wx:if="{{collect1.length>0}}">
+    <view class="item clearfix" wx:for="{{collect1}}" wx:key="id" wx:for-index="index">
+      <view class="fl img"><image src="{{item.img}}"></image></view>
+        <view class="fl titleC">
+          <navigator><view class="tit">{{item.tit}}</view></navigator>
+          <view class="clearfix jg">
+            <view class="price fl">¥{{item.price}}</view>
+            <view class="qgm fr" bindtap="scdeleted" data-index="{{index}}" data-name="delect1">删除</view>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view class="orderno" wx:else>
+    <view class="h-100"></view>
+    <view class="img">
+      <image src="{{imgurl}}/images/nocollect.png"></image>
+    </view>
+    <view class="tips">你还没有收藏的商品哦！</view>
+  </view>
+  
+  <!--猜你喜欢-->
+  <view class="cnxh clearfix">
+    <view class="cnxhtit">猜你喜欢</view>
+    <view class="likeclass clearfix">
+      <navigator class="item" wx:for="{{likeclass}}" wx:key="id" url="{{item.url}}">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="dl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="price">¥{{item.price}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+</view>
+<!--画室-->
+<view class="con-item {{tabArr.current ==1 ? 'on':''}}">
+  <view class="hasorder collect2" wx:if="{{collect2.length>0}}">
+    <view class="item clearfix" wx:for="{{collect2}}" wx:key="id" wx:for-index="index">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="dd">
+          <view class="time fl">{{item.time}}</view>
+          <view class="qgm fr" bindtap="scdeleted" data-index="{{index}}" data-name="delect2">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="orderno" wx:else>
+    <view class="h-100"></view>
+    <view class="img">
+      <image src="{{imgurl}}/images/nocollect.png"></image>
+    </view>
+    <view class="tips">你还没有收藏的画室哦！</view>
+  </view>
+</view>
+<!--资讯-->
+<view class="con-item {{tabArr.current ==2 ? 'on':''}}">
+  <view class="hasorder collect3" wx:if="{{collect3.length>0}}">
+    <view class="item clearfix" wx:for="{{collect3}}" wx:key="id" wx:for-index="index">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="dd">
+          <view class="time fl">{{item.time}}</view>
+          <view class="qgm fr" bindtap="scdeleted" data-index="{{index}}" data-name="delect3">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="orderno" wx:else>
+    <view class="h-100"></view>
+    <view class="img">
+      <image src="{{imgurl}}/images/nocollect.png"></image>
+    </view>
+    <view class="tips">你还没有收藏的资讯哦！</view>
+  </view>
+  <!--猜你喜欢-->
+  <view class="cnxh clearfix">
+    <view class="cnxhtit">猜你喜欢</view>
+    <view class="likenews">
+      <navigator class="item" wx:for="{{likenews}}" wx:key="id" url="{{item.url}}">
+        <view class="figure fl">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="dl fl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="text">{{item.text}}</view>
+          <view class="h-35"></view>
+          <view class="dd clearfix">
+            <view class="praise fl">
+              <view class="ico fl">
+                <image src="/images/lovexin@25rpx.png"></image>
+              </view>
+              {{item.coll}}
+            </view>
+            <view class="glance fl">
+              <view class="ico fl">
+                <image src="/images/blueeye@25rpx.png"></image>
+              </view>
+              {{item.glance}}
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!--作品-->
+<view class="con-item {{tabArr.current ==3 ? 'on':''}}">
+  <view class="hasorder collect3" wx:if="{{collect4.length>0}}">
+    <view class="item clearfix" wx:for="{{collect4}}" wx:key="id" wx:for-index="index">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="dd">
+          <view class="time fl">{{item.time}}</view>
+          <view class="qgm fr" bindtap="scdeleted" data-index="{{index}}" data-name="delect4">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="orderno" wx:else>
+    <view class="h-100"></view>
+    <view class="img">
+      <image src="{{imgurl}}/images/nocollect.png"></image>
+    </view>
+    <view class="tips">你还没有收藏的作品哦！</view>
+  </view>
+  <!--猜你喜欢-->
+  <view class="cnxh clearfix">
+    <view class="cnxhtit">猜你喜欢</view>
+    <view class="likenews">
+      <navigator class="item" wx:for="{{likeworks}}" wx:key="id" url="{{item.url}}">
+        <view class="figure fl">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="dl fl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="text">{{item.text}}</view>
+          <view class="h-35"></view>
+          <view class="dd clearfix">
+            <view class="praise fl">
+              <view class="ico fl">
+                <image src="/images/lovexin@25rpx.png"></image>
+              </view>
+              {{item.coll}}
+            </view>
+            <view class="glance fl">
+              <view class="ico fl">
+                <image src="/images/blueeye@25rpx.png"></image>
+              </view>
+              {{item.glance}}
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+

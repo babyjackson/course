@@ -1,0 +1,172 @@
+/* pages/components/works/show/show.wxss */
+.h-120{
+  height: 120rpx;
+}
+.h-70{
+  height:70rpx;
+}
+.h-35{
+  height: 35rpx;
+}
+.h-15{
+  height: 15rpx;
+}
+page{
+  background: #f5f5f5;
+}
+.showban{
+  width: 720rpx;
+  height: 510rpx;
+  margin: 20rpx auto;
+}
+.showban .ban{
+  width: 720rpx;
+  height: 510rpx;
+}
+.showban .ban .item{
+  position: relative;
+  width: 720rpx;
+  height: 445rpx;
+  border-radius: 35rpx;
+  overflow: hidden;
+}
+.showban .ban .item .figure{
+  width: 720rpx;
+  height: 445rpx;
+}
+.showban .ban .item .figure image{
+  display: block;
+  width: 720rpx;
+  height: 445rpx;
+}
+.showban .ban .item .dlabs{
+  position: absolute;
+  height: 250rpx;
+  width: 720rpx;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top,rgba(1, 1, 1, 0.2),rgba(245, 245, 245, 0.2));
+}
+.showban .ban .item .dlabs .tit{
+  line-height: 50rpx;
+  padding: 0 30rpx;
+  overflow: hidden;
+  height: 50rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+.showban .ban .item .dlabs .dd{
+  height: 30rpx;
+  padding: 0 30rpx;
+  font-size: 21rpx;
+  line-height: 30rpx;
+  color: #ffffff;
+}
+.showban .ban .item .dlabs .dd .ico{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5rpx;
+}
+.showban .ban .item .dlabs .dd .ico image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+.showban .ban .item .dlabs .glance{
+  margin-left: 20rpx;
+}
+
+.workli{
+  width: 750rpx;
+}
+.workli .item{
+  position: relative;
+  width: 665rpx;
+  height: 280rpx;
+  margin: 0 auto 35rpx;
+  border-radius: 30rpx;
+  background: #ffffff;
+  box-shadow: 0 0 30rpx #e9e9e9;
+}
+.workli .item .figure{
+  position: absolute;
+  left: -30rpx;
+  top: 25rpx;
+  width: 285rpx;
+  height: 220rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.workli .item .figure image{
+  display: block;
+  width: 285rpx;
+  height: 220rpx;
+}
+.workli .item .dl{
+  position: relative;
+  height: 220rpx;
+  width: 320rpx;
+  margin-right: 70rpx;
+  margin-top: 25rpx;
+}
+.workli .item .dl .tit{
+  line-height: 65rpx;
+  color: #1e1e1e;
+  font-size: 30rpx;
+  height: 65rpx;
+  overflow: hidden;
+}
+.workli .item .dl .text{
+  height: 80rpx;
+  overflow: hidden;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #acacac;
+}
+.workli .item .dl .dd .zan{
+  font-size: 24rpx;
+  color: #f5ca1d;
+  line-height: 35rpx;
+  margin-top: 10rpx;
+}
+.workli .item .dl .dd .zan .ico{
+  width: 35rpx;
+  height: 35rpx;
+  display: block;
+  margin-right:5rpx; 
+}
+.workli .item .dl .dd .zan .ico image{
+  display: block;
+  width: 35rpx;
+  height: 35rpx;
+}
+.workli .item .dl .dd .btn{
+  position: absolute;
+  bottom: -15rpx;
+  right: -100rpx;
+  width: 145rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  border-radius: 22rpx;
+  background: #1bdacd;
+  text-indent: 25rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  box-shadow: 0 0 30rpx #b2f3ee;
+}
+.workli .item .dl .dd .btn .altr{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 8rpx;
+}
+.workli .item .dl .dd .btn .altr image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+.loadmore{
+  font-size: 24rpx;
+  color: #1bdacd;
+  text-align: center;
+  line-height: 100rpx;
+}

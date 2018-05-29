@@ -1,0 +1,21 @@
+<!--pages/components/btob//status/status.wxml-->
+<view class="wrap" wx:if="{{status == 0}}">
+  <view class="h-130"></view>
+  <view class="figure1">
+    <image src="/images/checkstatus-1.png"></image>
+  </view>
+  <view class="h-20"></view>
+  <view class="tit">申请成功，请耐心等待审核...</view>
+  <view class="h-30"></view>
+  <view class="tips">请到个人中心查看您的审核结果！</view>
+</view>
+<view class="wrap" wx:elif="{{status == 1}}">
+  <view class="h-130"></view>
+  <view class="figure2">
+    <image src="/images/checkstatus-2.png"></image>
+  </view>
+  <view class="h-60"></view>
+  <view class="tit">很遗憾！信息审核未通过。</view>
+  <view class="h-30"></view>
+  <view class="tips"></view>
+</view>

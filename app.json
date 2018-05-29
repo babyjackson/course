@@ -1,0 +1,86 @@
+{
+  "pages":[
+    "pages/components/index",
+    "pages/components/train/trainlist/trainlist",
+    "pages/components/train/product/product",
+    "pages/components/train/detail/detail",
+    "pages/components/btob/invite/invite",
+    "pages/components/btob/protocol/protocol",
+    "pages/components/btob/status/status",
+    "pages/components/studio/brand/brand",
+    "pages/components/studio/detail/detail",
+    "pages/components/studio/shopsinfo/shopsinfo",
+    "pages/components/news/newslist/newslist",
+    "pages/components/news/newsdetail/newsdetail",
+    "pages/components/works/show/show",
+    "pages/components/category/category",
+    "pages/components/shopw/scart/scart",
+    "pages/components/shopw/balance/balance",
+    "pages/components/shopw/chooseaddr/chooseaddr",
+    "pages/components/shopw/cleargoods/cleargoods",
+    "pages/components/shopw/paysuccess/paysuccess",
+    "pages/components/shopw/addaddr/addaddr",
+    "pages/components/me/me",
+    "pages/components/order/order",
+    "pages/components/evaluate/evalu/evalu",
+    "pages/components/evaluate/neweva/neweva",
+    "pages/components/evaluate/think/think",
+    "pages/components/lineitem/lineitem",
+    "pages/components/refund/refund",
+    "pages/components/refundinfo/refundinfo",
+    "pages/components/refundlist/refundlist",
+    "pages/components/tkdetail/tkdetail",
+    "pages/components/search/search",
+    "pages/components/searchlist/searchlist",
+    "pages/components/coupons/coupons",
+    "pages/components/bonus/mebp/mebp",
+    "pages/components/bonus/bpshop/bpshop",
+    "pages/components/bonus/bpdetail/bpdetail",
+    "pages/components/bonus/bplist/bplist",
+    "pages/components/collect/collect",
+    "pages/components/setaddr/setaddr",
+    "pages/components/about/about",
+    "pages/components/clubcard/vipxq/vipxq",
+    "pages/components/clubcard/vipsm/vipsm",
+    "pages/components/clubcard/vipbuy/vipbuy",
+    "pages/components/meapply/meapply"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1bdacd",
+    "navigationBarTitleText": "少儿电脑绘画平台",
+    "navigationBarTextStyle":"#feffff"
+  },
+  "tabBar": {
+    "selectedColor": "#1bdacd",
+    "backgroundColor": "#fff",
+    "color": "#525252",
+    "list": [
+      {
+        "pagePath": "pages/components/index",
+        "text": "首页",
+        "iconPath": "images/b1-0.png",
+        "selectedIconPath": "images/b1-1.png"
+      },
+      {
+        "pagePath": "pages/components/category/category",
+        "text": "分类",
+        "iconPath": "images/b2-0.png",
+        "selectedIconPath": "images/b2-1.png"
+      },
+      {
+        "pagePath": "pages/components/shopw/scart/scart",
+        "text": "购物车",
+        "iconPath": "images/b3-0.png",
+        "selectedIconPath": "images/b3-1.png"
+      },
+      {
+        "pagePath": "pages/components/me/me",
+        "text": "个人",
+        "iconPath": "images/b4-0.png",
+        "selectedIconPath": "images/b4-1.png"
+      }
+    ]
+  },
+  "debug": true
+}

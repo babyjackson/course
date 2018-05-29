@@ -1,0 +1,100 @@
+<!--pages/components/train/trainlist/trainlist.wxml-->
+<view class="contopw">
+  <view class="contop">
+    <!--banner-->
+    <view class="tbanner">
+      <swiper class="tban" indicator-dots='true' circular='true' indicator-color='#ffffff' indicator-active-color='#1bdacd'>
+        <block wx:for="{{ibanner}}" wx:key="id">
+          <swiper-item>
+            <view class="item">
+              <image src="{{item.img}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--nav-->
+    <view class="tnav">
+      <navigator class="item" wx:for="{{tnav}}" wx:key="id" url="{{item.url}}">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="text">{{item.text}}</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="h-50"></view>
+  <view class="h-545"></view>
+  <view class="stick">
+    <view class="item clearfix" wx:for="{{stick}}" wx:key="id">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="dd">
+          <view class="pri fl">¥{{item.pri}}</view>
+          <view class="tips fr">推荐</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="h-100"></view>
+<!--共同模块-->
+<template name="pubcourse">
+  <view class="course">
+    <view class="bgcourse">
+      <image src="{{bgimg}}"></image>
+    </view>
+    <view class="courselist clearfix">
+      <view class="item" wx:for="{{list}}" wx:key="id">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="pri">¥{{item.pri}}</view>
+      </view>
+    </view>
+  </view>
+</template>
+<!--美术培训-->
+<view class="coursew">
+  <view class="alltit">
+    <text class="fl">美术培训</text>
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/train-t-ico.png"></image>
+    </view>
+  </view>
+  <template is="pubcourse" data="{{...artcourse}}"/>
+</view>
+<!--电脑绘画培训-->
+<view class="coursew">
+  <view class="alltit">
+    <text class="fl">电脑绘画培训</text>
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/train-t-ico.png"></image>
+    </view>
+  </view>
+  <template is="pubcourse" data="{{...pccourse}}"/>
+</view>
+<!--沙画培训-->
+<view class="coursew">
+  <view class="alltit">
+    <text class="fl">沙画课程</text>
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/train-t-ico.png"></image>
+    </view>
+  </view>
+  <template is="pubcourse" data="{{...sandcourse}}"/>
+</view>
+<!--语数外幼小启蒙课程-->
+<view class="coursew">
+  <view class="alltit">
+    <text class="fl">语数外幼小启蒙课程</text>
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/train-t-ico.png"></image>
+    </view>
+  </view>
+  <template is="pubcourse" data="{{...educourse}}"/>
+</view>

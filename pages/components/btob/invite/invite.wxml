@@ -1,0 +1,65 @@
+<!--pages/components/invite/invite.wxml-->
+<form bindsubmit="formSubmit" report-submit="true">
+  <view class="section clearfix">
+    <view class="lab fl">
+      <view class="ico fl"><image src="{{imgurl}}/images/tipsxin.png"></image></view>
+      联系人
+    </view>
+    <view class="input fl">
+      <input type="text" placeholder="您的称呼" name="uname"/>
+    </view>
+  </view>
+  <view class="xian2"></view>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <view class="ico fl"><image src="{{imgurl}}/images/tipsxin.png"></image></view>
+      手机号码
+    </view>
+    <view class="input fl">
+      <input type="text" placeholder="您的手机号" name="tel"/>
+    </view>
+  </view>
+  <view class="xian2"></view>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <view class="ico fl"><image src="{{imgurl}}/images/tipsxin.png"></image></view>
+      公司名称
+    </view>
+    <view class="input fl">
+      <input type="text" placeholder="请输入企业名称" name="coname"/>
+    </view>
+  </view>
+  <view class="xian2"></view>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <view class="ico fl"></view>
+      地址
+    </view>
+    <view class="input fl">
+      <input type="text" placeholder="详细地址" name="addr"/>
+    </view>
+  </view>
+  <view class="xian2"></view>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <view class="ico fl"><image src="{{imgurl}}/images/tipsxin.png"></image></view>
+      培训项目
+    </view>
+    <view class="input fl">
+      <input type="text" placeholder="例如国画、水粉等" name="project"/>
+    </view>
+  </view>
+  <view class="xian2"></view>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <view class="ico fl"></view>
+      公司logo
+    </view>
+    <view class="chooselogo fl" bindtap="chooselogo">
+      <image src="{{logo}}"></image>
+    </view>
+  </view>
+  <view class="btnfix">
+    <button class="btn" form-type='submit'>申请商家入驻</button>
+  </view>
+</form>

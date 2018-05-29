@@ -1,0 +1,233 @@
+<!--pages/components/index.wxml-->
+<!--banner轮播-->
+<view class="ibanner">
+  <swiper class="iban" indicator-dots="true" indicator-color="#eeeeee" indicator-active-color="#1bdacd" circular="true">
+    <block wx:for="{{ibanner}}" wx:key="idx">
+      <swiper-item>
+        <view class="item">
+          <view class="img">
+            <image src="{{item.img}}"></image>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--导航-->
+<view class="inav">
+  <block wx:for="{{inav}}" wx:key="id">
+    <navigator class="item" url="{{item.url}}">
+      <view class="figure">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="text">{{item.text}}</view>
+    </navigator>
+  </block>
+</view>
+<view class="h-65"></view>
+<!--培训课程-->
+<view class="trainCourse">
+  <view class="train">
+    <!--搜索-->
+    <navigator class="isearch clearfix" url="/pages/components/search/search">
+      <input type="text" placeholder="请输入关键字" placeholder-style="color:#b1b1b1;" class="fl"/>
+      <icon type="search" size="25" color="#1bdacd" class="fr"/>
+    </navigator>
+    <view class="h-60"></view>
+    <view class="ialltit">
+      <view class="titw">
+        <view class="zw">培训课程</view>
+        <view class="yw">TRAINING COURSE</view>
+      </view>
+      <navigator class="more">+</navigator>
+    </view>
+    <view class="h-25"></view>
+    <view class="trainul clearfix">
+      <block wx:for="{{traincourse}}" wx:key="id">
+        <view class="item fl">
+          <view class="h-30"></view>
+          <view class="tit-li">
+            <view class="ico fl"><image src="{{item.ico}}"></image></view>
+            {{item.cname}}
+          </view>
+          <view class="h-20"></view>
+          <view class="tips">
+            {{item.tips}}
+            <view class="altr fr">></view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="h-40"></view>
+  </view>
+  <view class="recomcourse">
+    <view class="bgbgz">
+      <image src="{{imgurl}}/images/bgbgz.png"></image>
+    </view>
+    <view class="recourse">
+      <view class="h-35"></view>
+      <view class="titr">
+        推荐课程
+      </view>
+      <view class="h-20"></view>
+      <view class="xianbg">
+        <image src="{{imgurl}}/images/xian.png"></image>
+      </view>
+      <!--推荐课程-->
+      <view class="rcourse">
+        <view class="item clearfix" wx:for="{{rcourse}}" wx:key="idx">
+          <view class="figure fl">
+            <image src="{{imgurl}}/images/rcourseico.png"></image>
+          </view>
+          <view class="dl fr">
+            <view class="tit">{{item.cname}}</view>
+            <view class="text">{{item.tips}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="h-25"></view>
+    <view class="ckmore">查看更多课程</view>
+    <view class="h-40"></view>
+  </view>  
+</view>
+<!--知名画室-->
+<view class="famous">
+  <view class="h-40"></view>
+  <view class="ialltit">
+    <view class="titw">
+      <view class="zw black">知名画室</view>
+      <view class="yw black">FAMOUS STUDIO</view>
+    </view>
+    <navigator class="more">+</navigator>
+  </view>
+  <view class="h-25"></view>
+  <view class="fbanner">
+    <swiper class="fban" indicator-dots="true" circular="true" indicator-color="#eeeeee" indicator-active-color="#1bdacd" previous-margin="15rpx" next-margin="60rpx" bindchange="curchange">
+      <block wx:for="{{fban}}" wx:key="id" wx:for-index="index">
+        <swiper-item>
+          <view class="item {{current == index ? 'bgcolor' :''}}" data-index="{{index}}">
+            <view class="h-30"></view>
+            <view class="itop clearfix">
+              <view class="figure fl">
+                <image src="{{item.logo}}"></image>
+              </view>
+              <view class="dl fl">
+                <view class="tit">{{item.tit}}</view>
+                <view class="date">{{item.date}}</view>
+              </view>
+            </view>
+            <view class="h-10"></view>
+            <view class="text">
+              {{item.text}}
+            </view>
+            <navigator class="ckxq" url="{{item.url}}">查看详情</navigator>
+          </view>
+          <view class="h-70"></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="famous-li">
+    <view class="item clearfix" wx:for="{{famousli}}" wx:key="idx">
+      <view class="bgfamous"><image src="{{imgurl}}/images/bgfamous.png"></image></view>
+      <view class="fam">
+        <view class="figure fl">
+          <image src="{{item.logo}}"></image>
+        </view>
+        <view class="dl fl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="h-10"></view>
+          <view class="text">{{item.text}}</view>
+        </view>
+        <view class="alr fr">
+          <image src="{{imgurl}}/images/famaltr.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--行业资讯-->
+<view class="industry">
+  <view class="h-40"></view>
+  <view class="ialltit">
+    <view class="titw">
+      <view class="zw black">行业资讯</view>
+      <view class="yw black">INDUSTRY NEWS</view>
+    </view>
+    <navigator class="more">+</navigator>
+  </view>
+  <view class="h-20"></view>
+  <view class="indus">
+    <view class="newsbanner">
+      <swiper class="newsban" indicator-dots='true' indicator-color='#eeeeee' indicator-active-color='#1bdacd' circular='true'>
+        <block wx:for="{{newsban}}" wx:key="idx">
+            <swiper-item>
+              <view class="item">
+                <view class="figure"><image src="{{item.img}}"></image></view>
+                <view class="newstit">{{item.tit}}</view>
+              </view>
+            </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="h-25"></view>
+    <view class="indusliw">
+      <view class="indusbg"><image src="{{imgurl}}/images/famli.png"/></view>
+      <view class="indusli">
+        <view class="item" wx:for="{{newsli}}" wx:key="idx">
+          <view class="h-45"></view>
+          <view class="tit">{{item.tit}}</view>
+          <view class="text">{{item.text}}</view>
+          <navigator class="qw" url="{{item.url}}">全文阅读 >></navigator>
+        </view>
+      </view>  
+    </view>
+    <view class="h-25"></view>
+  </view>
+</view>
+<!--作品展示-->
+<view class="workshow">
+  <view class="h-40"></view>
+  <view class="ialltit">
+    <view class="titw">
+      <view class="zw black">作品展示</view>
+      <view class="yw black">EXHIBITION OF WORKS</view>
+    </view>
+    <navigator class="more">+</navigator>
+  </view>
+  <view class="h-20"></view>
+  <view class="workbanner">
+    <swiper class="workban" circular="true" previous-margin="40rpx" next-margin="35rpx" indicator-dots="true" indicator-color="#eeeeee" indicator-active-color="#1bdacd">
+      <block wx:for="{{workban}}" wx:key="id">
+        <swiper-item>
+          <view class="item">
+            <view class="figure">
+              <image src="{{item.img}}"></image>
+            </view>
+            <view class="tit">{{item.tit}}</view>
+            <view class="text">{{item.text}}</view>
+            <view class="ckxq">查看详情<view class="altr fr"></view></view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="workli">
+    <view class="item clearfix" wx:for="{{workli}}" wx:key="id">
+      <view class="figure">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fr">
+        <view class="tit">{{item.tit}}</view>
+        <view class="text">{{item.text}}</view>
+        <view class="h-40"></view>
+        <view class="dd">
+          <view class="zan"><view class="ico fl"><image src="{{imgurl}}/images/yzan.png"></image></view>{{item.zan}}</view>
+          <view class="btn">去看看<view class="altr fr"><image src="{{imgurl}}/images/workaltr.png"></image></view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="h-10"></view>
+</view>

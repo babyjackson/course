@@ -1,0 +1,44 @@
+<!--pages/components/train/product/product.wxml-->
+<!--下拉-->
+<view wx:if="{{listData}}" class="a-dropdown-wrapper {{active ? 'expand' : ''}}">
+  <view id="a-dropdown-nav" class="a-dropdown-nav">
+    <block  wx:for="{{listData}}" wx:key="id">
+      <view class="a-dropdown-nav-item clearfix {{ active && selectedNav == index ? 'active' : ''}}" bindtap="_onNavItemTap" data-index="{{index}}">
+          <text>{{item.nav}}</text>
+          <view class="triangle {{item.hasalt == 1 ?'':'hide'}}">
+            <image src="{{imgurl}}/images/altdown.png"></image>
+          </view>
+      </view>
+    </block>
+  </view>
+  <scroll-view class="a-dropdown-contents">
+    <block wx:for="{{listData}}" wx:for-item="list" wx:for-index="parentIndex" wx:key="idx">
+      <view hidden="{{selectedNav !== parentIndex}}">
+        <view class="a-dropdown-list-items {{active? 'show' : ''}}">
+          <block wx:for="{{list.data}}" wx:for-item="data" wx:key="idx">
+              <view class="a-dropdown-list-item"
+                  bindtap="_catchListItemTap" data-index="{{index}}" data-parentIndex="{{parentIndex}}" data-title="{{data.title}}">
+                  <view class="a-dropdown-list-item-line">
+                      <text class="a-dropdown-list-item-content">{{data.title}}</text>
+                  </view>
+              </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="a-dropdown-placeholder"></view>
+  <view class="a-dropdown-bg" bindtap="_catchBgTap"></view>
+</view>
+<!--列表-->
+<view class="listgoodsW clearfix">
+  <navigator class="item" wx:for="{{goodslist}}" wx:key="id" url="{{item.url}}">
+    <view class="h-40"></view>
+    <view class="figure">
+      <image src="{{item.imgsrc}}"></image>
+    </view>
+    <view class="tit">{{item.tit}}</view>
+    <view class="pri">¥{{item.price}}</view>
+  </navigator>
+  <view class="loadmore">加载更多</view>
+</view>

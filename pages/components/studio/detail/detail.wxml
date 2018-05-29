@@ -1,0 +1,151 @@
+<!--pages/components/studio/detail/detail.wxml-->
+<view class="stuban">
+  <view class="banbg">
+    <image src="{{imgurl}}/images/brandbg.jpg"></image>
+  </view>
+  <view class="ban">
+    <view class="h-20"></view>
+    <view class="input clearfix">
+      <icon type="search" class="fl" size="20" color="#e4e4e4" style="margin-left:20rpx;margin-top:10rpx;"/>
+      <input type="text" placeholder="搜索店铺内宝贝" class="fl"/>
+    </view>
+    <view class="h-20"></view>
+    <view class="wrap clearfix">
+      <view class="figure fl">
+        <image src="{{imgurl}}/images/allimg.jpg"></image>
+      </view>
+      <view class="dl fl">
+        <view class="tit">自然堂男士护肤旗舰店</view>
+        <view class="h-20"></view>
+        <view class="dd clearfix">
+          <view class="glance fl">
+            <view class="ico fl"><image src="{{imgurl}}/images/glance1.png"></image></view>
+            3690
+          </view>
+          <view class="coll fl">
+            <view class="ico fl"><image src="{{imgurl}}/images/star-1.png"></image></view>
+            97
+          </view>
+        </view>
+      </view>
+      <view class="sc fr">
+        <view class="ico fl"><image src="{{imgurl}}/images/star2.png"></image></view>
+        收藏
+      </view>
+    </view>
+  </view>
+</view>
+<!--导航-->
+<view class="nav" bindtap="tabChange">
+  <view class="item {{tabArr.cur == 0 ? 'active' : ''}}" data-index="0">公司首页</view>
+  <view class="item {{tabArr.cur == 1 ? 'active' : ''}}" data-index="1">全部宝贝</view>
+  <view class="item {{tabArr.cur == 2 ? 'active' : ''}}" data-index="2">新品上架</view>
+</view>
+<view class="con-item {{tabArr.cur == 0 ? 'on' : ''}}">
+  <!--导航-->
+  <view class="iban">
+    <swiper class="ban" indicator-dots="true" circular="true" indicator-color="#ffffff" indicator-active-color="#1bdacd">
+      <block wx:for="{{ban}}" wx:key="id">
+        <swiper-item>
+          <view class="item">
+            <image src="{{item.img}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--今日必推-->
+  <view class="retoday">
+    <view class="re clearfix">
+      <view class="figure fl">
+        <image src="{{imgurl}}/images/allimg.jpg"></image>
+      </view>
+      <view class="wp">
+        <view class="tips">今日必推</view>
+        <view class="text">少儿美术课件培训教材儿童创意课件PPT美术教程培训班课程教案育</view>
+      </view>
+    </view>
+  </view>
+  <!--2-->
+  <view class="retwo">
+    <view class="item clearfix" wx:for="{{recom}}" wx:key="id">
+      <view class="figure">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="dd clearfix">
+          <view class="price fl">¥{{item.price}}</view>
+          <view class="go fr">去看看</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--热门课程-->
+  <view class="hotcourse">
+    <view class="h-20"></view>
+    <view class="hottit">
+      <view class="tit fl">
+        热门课程
+      </view>
+      <view class="more fr"><image src="{{imgurl}}/images/brandmore.png"></image></view>
+    </view>
+    <view class="course clearfix">
+      <view class="item" wx:for="{{hotcourse}}" wx:key="id">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--全部-->
+<view class="con-item {{tabArr.cur == 1 ? 'on' : ''}}">
+  <view class="allbaby">
+    <view class="course clearfix">
+      <view class="item" wx:for="{{hotcourse}}" wx:key="id">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="con-item {{tabArr.cur == 2 ? 'on' : ''}}">
+  <view class="updata">
+    <view class="upban">
+      <image src="{{imgurl}}/images/updataban.png"></image>
+    </view>
+    <view class="course clearfix">
+      <view class="item" wx:for="{{hotcourse}}" wx:key="id">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--底部-->
+<view class="h-85"></view>
+<view class="btnfixed clearfix">
+  <view class="item fl">
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/kefu-2.png"></image>
+    </view>
+    联系客服
+  </view>
+  <view class="xian-2 fl"></view>
+  <navigator class="item fl" url="/pages/components/studio/shopsinfo/shopsinfo">
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/mall-2.png"></image>
+    </view>
+    商铺详情
+  </navigator>
+</view>

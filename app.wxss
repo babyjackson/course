@@ -1,0 +1,34 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear:both;
+  display: block;
+  height: 0;
+  content: ".";
+  visibility: hidden;
+}
+.h-50{
+  height:50rpx;
+}
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+  overflow:hidden;
+}
+.scroll-view-item_H{
+  display: inline-block;
+}

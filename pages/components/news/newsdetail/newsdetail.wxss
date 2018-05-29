@@ -1,0 +1,84 @@
+/* pages/components/news/newsdetail/newsdetail.wxss */
+.bandetail{
+  width: 750rpx;
+  height: 450rpx;
+}
+.bandetail image{
+  display: block;
+  width: 750rpx;
+  height: 450rpx;
+}
+.tipsban{
+  position: relative;
+  height: 50rpx;
+}
+.tipsban .tips{
+  position: absolute;
+  width: 720rpx;
+  height: 110rpx;
+  left: 15rpx;
+  bottom: 0;
+  border-radius: 25rpx;
+  background: #fff;
+  box-shadow: 0 -2rpx 20rpx rgba(0, 0, 0, 0.13);
+}
+.tipsban .tips .coll{
+  height: 30rpx;
+  font-size: 27rpx;
+  color: #1bdacd;
+  margin: 40rpx 0 0 70rpx;
+}
+.tipsban .tips .galance{
+  height: 30rpx;
+  font-size: 27rpx;
+  color: #1bdacd;
+  margin: 40rpx 0 0 70rpx;
+}
+.tipsban .tips .ico{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5rpx;
+}
+.tipsban .tips .ico  image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+.condetail{
+  padding: 0 15rpx;
+}
+.condetail .tit{
+  font-size: 33rpx;
+  color: #000000;
+  line-height: 45rpx;
+  padding: 30rpx 0;
+}
+.condetail .wp{
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.condetail .wp .admin{
+  margin-left: 20rpx;
+}
+.condetail .con{
+  padding:30rpx 0 0 0;
+  text-indent: 30rpx;
+  font-size: 24rpx;
+  color: #2a2a2a;
+  line-height: 45rpx;
+}
+.collbtn{
+  width: 230rpx;
+  height: 65rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  background: linear-gradient(to right,#1bd9cd,#1ecbdb);
+  margin: 60rpx auto;
+  border-radius: 32rpx;
+  overflow: hidden;
+  text-align: center;
+  line-height: 65rpx;
+  letter-spacing: 2rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.13);
+}

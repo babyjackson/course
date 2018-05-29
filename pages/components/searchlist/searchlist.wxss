@@ -1,0 +1,96 @@
+/* pages/component/searchlist/searchlist.wxss */
+
+page{
+  background: #f5f5f5;
+}
+/***搜索**/
+.searchw{
+  height: 65rpx;
+  padding: 20rpx 0;
+  width: 750rpx;
+  background: #1bdacd;
+}
+.search{
+  width: 715rpx;
+  height: 65rpx;
+  border-radius: 33rpx;
+  overflow: hidden;
+  background: #ffffff;
+  margin: 0 auto;
+}
+.searchw .ico{
+  margin: 10rpx 20rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+.searchw .ico image{
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+.searchw input{
+  width: 600rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  color: #b3b3b3;
+}
+/***搜索列表**/
+.searchlist{
+  width: 750rpx;
+}
+.searchlist .item{
+  width: 715rpx;
+  height: 300rpx;
+  border-radius: 25rpx;
+  background: #fff;
+  box-shadow: 2rpx 2rpx 15rpx rgba(0, 0, 0, 0.15);
+  margin: 30rpx auto 0;
+}
+.searchlist .item .figure{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin: 25rpx;
+}
+.searchlist .item .figure image{
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+}
+.searchlist .item .dl{
+  width: 380rpx;
+  height: 250rpx;
+  overflow: hidden;
+  margin: 25rpx 0;
+}
+.searchlist .item .dl .tit{
+  width: 380rpx;
+  height: 170rpx;
+  font-size: 30rpx;
+  color: #5e5e5e;
+  line-height: 55rpx;
+  overflow: hidden;
+}
+.searchlist .item .dl .price{
+  margin-top: 10rpx;
+  width: 380rpx;
+  height: 60rpx;
+  overflow: hidden;
+}
+.searchlist .item .dl .price .pri{
+  font-size: 36rpx;
+  color: #1bdacd;
+  line-height: 60rpx;
+  font-weight: bold;
+}
+.searchlist .item .dl .price .ckxq{
+  width: 100rpx;
+  height: 50rpx;
+  border: 3rpx solid #1bdacd;
+  font-size: 30rpx;
+  color: #1bdacd;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}

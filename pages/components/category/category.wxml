@@ -1,0 +1,36 @@
+<!--pages/components/category/category.wxml-->
+<!--搜索-->
+<view class="searchW">
+  <view class="search">
+    <input type="text" class="inp" placeholder="搜索京东商品" disabled="true"></input>
+    <view class="icon">
+      <icon type="search" color="#aeaeae" size="20"></icon>
+    </view>
+  </view>
+</view>
+<view class="wrap clearfix">
+  <!--左侧导航-->
+  <view class="leftNav fl">
+    <scroll-view scroll-y="true" style="height:1090rpx" scroll-width-animation="true">
+      <view class="item {{navArr.cur == index ? 'on' : ''}}" wx:for="{{classifynav}}" wx:key="id" wx:for-index="index" data-index="{{index}}" bindtap="changeNav">
+        {{item.name}}
+      </view>
+    </scroll-view>
+  </view>
+  <!--右侧分类-->
+  <view class="rightClass fr">
+    <scroll-view scroll-y="true" style="height:1090rpx" scroll-width-animation>
+      <view class="firstnav" wx:for="{{classlist}}" wx:key="id">
+        <view class="tit">{{item.tit}}</view>
+        <view class="secondnav clearfix">
+          <navigator class="item fl" wx:for="{{item.list}}" wx:for-item="list" wx:key="id" url="{{item.url}}">
+            <view class="figure">
+              <image src="{{list.img}}"></image>
+            </view>
+            <view class="setit">{{list.name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

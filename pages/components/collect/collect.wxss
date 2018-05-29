@@ -1,0 +1,303 @@
+/* pages/component/wdsc/wdsc.wxss */
+page{
+  background: #efefef;
+}
+.h-25{
+  height: 25rpx;
+}
+.h-35{
+  height: 35rpx;
+}
+.h-100{
+  height: 100rpx;
+}
+.h120{
+  height: 120rpx;
+}
+.con-item{
+  display: none;
+}
+.con-item.on{
+  display: block;
+}
+.collect1 .item{
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 30rpx 20rpx;
+  background: #fff;
+}
+.collect1 .item .img{
+  width: 190rpx;
+  height:200rpx;
+}
+.collect1 .item .img image{
+   width: 190rpx;
+  height:200rpx;
+}
+.collect1 .item .titleC{
+  width: 500rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+}
+.collect1 .item .titleC .tit{
+  font-size: 28rpx;
+  color: #292828;
+  line-height: 40rpx;
+   overflow: hidden;
+}
+.collect1 .item .jg{
+  margin-top:75rpx; 
+}
+.collect1 .item .titleC .tips{
+  font-size: 28rpx;
+  color: #929193;
+}
+.collect1 .item .price{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+  color: #d42d2d;
+}
+
+.collect2 .item{
+  height: 195rpx;
+  padding: 35rpx 0;
+  background: #ffffff;
+  border-bottom: 2rpx solid #efefef;
+}
+.collect2 .item .figure{
+  width: 195rpx;
+  height: 195rpx;
+  margin: 0 20rpx;
+  border-radius: 50%;
+  background: #72b8ae;
+}
+.collect2 .item .figure image{
+  display: block;
+  width: 195rpx;
+  height: 195rpx;
+  border-radius: 50%;
+}
+.collect2 .item .dl{
+  width: 490rpx;
+  height: 195rpx;
+}
+.collect2 .item .dl .tit{
+  line-height: 65rpx;
+  height: 135rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #2a2a2a;
+}
+.collect2 .item .dl .time{
+  font-size: 23rpx;
+  color: #aeadad;
+  line-height: 50rpx;
+}
+
+.collect3 .item{
+  height: 190rpx;
+  padding: 30rpx 0;
+  background: #fff;
+  border-bottom: 2rpx solid #efefef;
+}
+.collect3 .item .figure{
+  width: 260rpx;
+  height: 190rpx;
+  margin: 0 20rpx;
+  border-radius: 20rpx;
+}
+.collect3 .item .figure image{
+  display: block;
+  width: 260rpx;
+  height: 190rpx;
+  border-radius: 20rpx;
+}
+.collect3 .item .dl{
+  width: 430rpx;
+  height: 190rpx;
+}
+.collect3 .item .dl .tit{
+  height: 125rpx;
+  margin:10rpx 0;
+  font-size: 30rpx;
+  color: #2a2a2a;
+  line-height: 40rpx;
+}
+.collect3 .item .dl .time{
+  font-size: 23rpx;
+  color: #aeadad;
+  line-height: 30rpx;
+}
+
+.item .qgm{
+  width: 120rpx;
+  height:50rpx;
+  border:2rpx solid #0cc8a5;
+  border-radius: 4rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 23rpx;
+  color: #0cc8a5;
+}
+.cnxh{
+  background-color: #efefef;
+}
+.cnxhtit{
+  font-size: 30rpx;
+  color: #1f1f1f;
+  padding: 40rpx 0 25rpx 0;
+  text-align: center;
+}
+.tabswitch{
+   width: 750rpx;
+   padding: 0 20rpx;
+   height: 95rpx;
+   background: #fff;
+   display: flex;
+ }
+.tabswitch .titem{
+  flex: 1;
+  font-size: 28rpx;
+  color: #5d5d5d;
+  margin: 0 10rpx;
+  line-height: 91rpx;
+  border-bottom: 4rpx solid #fff;
+  position: relative;
+  text-align: center;
+}
+.tabswitch .titem.active{
+  border-bottom: 4rpx solid #0cc8a5;
+}
+.tabswitch .titem .num{
+  width: 33rpx;
+  height: 33rpx;
+  overflow: hidden;
+  font-size: 21rpx;
+  color: #ffffff;
+  border-radius: 50%;
+  background: #0cc8a5;
+  position: absolute;
+  top: 10rpx;
+  left: 60%;
+  line-height: 33rpx;
+  text-align: center;
+}
+/**没有收藏**/
+.orderno{
+  height:660rpx;
+  width: 750rpx;
+  background: #ffffff;
+}
+.orderno .img{
+  width: 460rpx;
+  height: 280rpx;
+  margin: 0 auto;
+}
+.orderno .img image{
+  display: block;
+  width: 460rpx;
+  height: 280rpx;
+}
+.orderno .tips{
+  font-size: 30rpx;
+  color: #484b48;
+  text-align: center;
+  line-height: 30rpx;
+}
+/***猜你喜欢***/
+.likeclass{
+  padding: 0 20rpx;
+}
+.likeclass .item{
+  width: 340rpx;
+  height: 415rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  overflow: hidden;
+  margin-bottom: 40rpx;
+}
+.likeclass .item:nth-of-type(odd){
+  float: left;
+}
+.likeclass .item:nth-of-type(even){
+  float: right;
+}
+.likeclass .item .figure{
+  padding: 35rpx 35rpx 10rpx 35rpx;
+}
+.likeclass .item .figure image{
+  width: 270rpx;
+  height: 250rpx;
+}
+
+.likeclass .item .tit{
+  height: 60rpx;
+  overflow: hidden;
+  width: 270rpx;
+  margin: 0 auto;
+  font-size: 22rpx;
+  color: #5e5e5e;
+  line-height: 30rpx;
+}
+.likeclass .item .price{
+  font-size: 36rpx;
+  color: #0cc8a5;
+  line-height: 35rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.likenews .item{
+  height: 205rpx;
+  padding: 25rpx 0;
+  margin: 0 20rpx 25rpx 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 2rpx 15rpx rgba(0, 0, 0, 0.1);
+}
+.likenews .item .figure{
+  width: 300rpx;
+  height: 205rpx;
+  margin: 0 25rpx;
+  border-radius: 15rpx;
+}
+.likenews .item .figure image{
+  display: block;
+  width: 300rpx;
+  height: 205rpx;
+  border-radius: 15rpx;
+}
+.likenews .item .dl{
+  width: 320rpx;
+  height: 205rpx;
+}
+.likenews .item .dl .tit{
+  line-height: 70rpx;
+  height: 70rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #4e4e4e;
+}
+.likenews .item .dl .text{
+  font-size: 24rpx;
+  color: #a8a8a8;
+  line-height: 35rpx;
+  height: 35rpx;
+}
+.likenews .item .dd{
+  font-size: 21rpx;
+  color: #1bdacd;
+  line-height: 25rpx;
+}
+.likenews .item .dd .ico{
+  width: 35rpx;
+  height: 25rpx;
+}
+.likenews .item .dd .ico image{
+  display: block;
+  width: 35rpx;
+  height: 25rpx;
+}
+.likenews .item .dd .glance{
+  margin-left: 15rpx;
+}

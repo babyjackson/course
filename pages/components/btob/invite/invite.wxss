@@ -1,0 +1,72 @@
+/* pages/components/invite/invite.wxss */
+.xian2{
+  height: 2rpx;
+  background: #eeeeee;
+}
+.section{
+  padding: 0 30rpx;
+}
+.section .lab{
+  padding: 30rpx 0;
+  height: 35rpx;
+  line-height: 35rpx;
+  width: 170rpx;
+  font-size: 26rpx;
+  color: #3e3e3e;
+}
+.section .lab .ico{
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 15rpx;
+}
+.section .lab .ico image{
+  display: block;
+  width: 10rpx;
+  height: 10rpx;
+}
+.section .input{
+  height: 95rpx;
+  width: 500rpx;
+}
+.section .input input{
+  display: block;
+  width: 500rpx;
+  height: 95rpx;
+  border: 0;
+  outline: 0;
+  font-size: 26rpx;
+  color: #bdbdbd;
+}
+.chooselogo{
+  display: block;
+  width: 210rpx;
+  height: 210rpx;
+  margin-top: 30rpx;
+  background:#ffffff;
+  border:1rpx solid #e5e5e5;
+}
+.chooselogo image{
+  display: block;
+  width: 210rpx;
+  height: 210rpx;
+}
+.btnfix{
+  position: fixed;
+  bottom: 30rpx;
+  width: 100%;
+  height:75rpx;
+}
+.btnfix .btn{
+  display: block;
+  width: 710rpx;
+  height: 75rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+  line-height: 75rpx;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 35rpx;
+  border: 0;
+  outline: 0;
+  background:linear-gradient(to right,#1bdacd,#1bdacd);
+}

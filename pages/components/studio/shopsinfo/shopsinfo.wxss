@@ -1,0 +1,122 @@
+/* pages/component/shopsinfo/shopsinfo.wxss */
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h20{
+  height: 20rpx;
+  background: #f0efef;
+}
+.h60{
+  height: 60rpx;
+}
+.sinfow{
+  width: 750rpx;
+  height: 385rpx;
+  background: #fff;
+}
+.sinfow .logo{
+  width: 185rpx;
+  height: 75rpx;
+  margin: 0 auto;
+}
+.sinfow .logo image{
+  display: block;
+  width: 185rpx;
+  height: 75rpx;
+}
+.sinfow .sname{
+  line-height: 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 30rpx 0;
+  color: #23242a;
+}
+.sinfow .ctime{
+  font-size: 20rpx;
+  color: #959495;
+  line-height: 25rpx;
+  text-align: center;
+}
+.numwrap{
+  width: 750rpx;
+  height: 80rpx;
+  margin:0 auto;
+  padding: 35rpx 0 25rpx 0;
+  display: flex;
+}
+.numwrap .item{
+  flex: 1;
+  height: 80rpx;
+  position: relative;
+}
+.numwrap .item .num{
+  line-height: 45rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #262626;
+}
+.numwrap .item .tit{
+  line-height: 35rpx;
+  font-size: 20rpx;
+  color: #a19fa1;
+  text-align: center;
+}
+.numwrap .item .rxian{
+  width: 2rpx;
+  height: 27rpx;
+  background: #efebef;
+  position: absolute;
+  right: 0;
+  top: 20rpx;
+}
+.shopstar{
+  padding: 0 15rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+}
+.shopstar .tit{
+  font-size: 24rpx;
+  color: #5a5c5a;
+  line-height: 100rpx;
+}
+.shopstar .xinw{
+  margin: 40rpx 0 35rpx 25rpx;
+}
+.shopstar .xinw .xin{
+  width: 22rpx;
+  height: 22rpx;
+  margin-right: 8rpx;
+}
+.shopstar .xinw .xin image{
+  display: block;
+  width: 22rpx;
+  height: 22rpx;
+}
+.introduce{
+  padding: 0 15rpx;
+}
+.introduce .tit{
+  height: 105rpx;
+  line-height: 105rpx;
+  color: #676767;
+  font-size: 28rpx;
+}
+.introduce .text{
+  font-size: 24rpx;
+  color: #676767;
+  line-height: 40rpx;
+}
+.introduce .text view{
+  text-indent: 50rpx;
+}

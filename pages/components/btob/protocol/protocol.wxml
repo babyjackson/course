@@ -1,0 +1,68 @@
+<!--pages/components/btob/protocol/protocol.wxml-->
+<view class="wrap {{active ? 'expand':''}}">
+  <!--协议说明-->
+  <view class="state">
+    <view class="tit">协议说明：</view>
+    <view class="text">为了更好地为商家服务以及保障消费者权益，甲乙双方本着“真诚经营、资源互补、协同发展、合作共赢、价值共享”的经营理念，根据乙方商城入驻条件甲方申请入驻开店经营，在符合相关法律法规，不违反市场竞争的情况下，甲方须遵循乙方的运营管理规范，经友好协商，甲乙双方签署以下入驻协议</view>
+  </view>
+  <view class="h-50"></view>
+  <!--入驻条件-->
+  <view class="conditions">
+    <view class="tit">一、入驻商家基本条件</view>
+    <view class="cif">
+      1、有良好的合作诚意，能提供优质的商品或服务，保证合作的顺利进行与提供良好的售后服务保障；
+    </view>
+    <view class="cif">
+      2、甲方必须满足以下条件之一（符合其中一项即可）
+    </view>
+    <view class="cif">
+      ⑴拥有自己注册商标的生产型厂商；
+    </view>
+    <view class="cif">
+      ⑵获得国际或者国内知名品牌厂商的授权的经销商、代理商、专卖店以及网上商城、生活服务类店铺等；
+    </view>
+    <view class="cif">
+      3、甲方应在签订本协议时向乙方提供（经法律许可并乙方认可的）包括但不限于以下证明材料复印件：
+    </view>
+    <view class="cif">
+      ⑴营业执照(包括个体户营业执照)、税务登记证、法人代表身份证复印件；
+    </view>
+    <view class="cif">
+      ⑵拥有注册商标或者品牌，或者拥有正规的品牌授权书与供货渠道证明。
+    </view>
+    <view class="cif">
+      4、甲方承诺：（自愿退股协议书）
+    </view>
+    <view class="cif">
+      ⑴所有商品或服务均以一口价即“合商价”销售，价格最短有效期为24小时（参与秒杀活动除外）；所有合商价均为商家同时期给出的最低优惠价，即只能低于或等同于甲
+    </view>
+  </view>
+  <view class="h-50"></view>
+  <view class="checkSelect">
+    <view class="select fl" bindtap="sureRead">
+      <view class="ico" wx:if="{{selected}}"><image src="/images/rightico.png"></image></view>
+    </view>
+    我已阅读并同意<text>《山西建材凭条加盟服务和隐私条款》</text>
+  </view>
+  <view class="h-30"></view>
+  <!--立即入住-->
+  <view class="moveinto">
+    <button class="btn" bindtap="enterJump">立即申请入驻</button>
+  </view>
+  <view class="h-120"></view>
+  <view class="dropdown-bg" bindtap="catchBgTap"></view>
+  <view class="dealertw">
+    <view class="dealert">
+      <view class="figuretop">
+        <image src="/images/zsalert1.png"></image>
+      </view>
+      <view class="close" bindtap="catchBgTap"><image src="/images/close.png"></image></view>
+      <view class="h-220"></view>
+      <view class="info">
+        <view class="tit">申请失败！</view>
+        <view class="h-25"></view>
+        <view class="tips">原因: 申请次数太多！</view>
+      </view>
+    </view>
+  </view>
+</view>

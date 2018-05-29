@@ -1,0 +1,137 @@
+<!--pages/components/train/detail/detail.wxml-->
+<view class="dbanner">
+  <swiper class="dban" circular="true" indicator-dots="true" indicator-color="#d7d6d6" indicator-active-color="#1bdacd">
+    <block wx:for="{{dban}}" wx:key="id">
+      <swiper-item>
+        <view class="item">
+          <image src="{{item.img}}"></image>
+        </view>
+      </swiper-item>
+    </block>  
+  </swiper>
+</view>
+<!--info-->
+<view class="goodsinfo">
+  <view class="tit">隶书篆书视频教程 毛笔书法入门零基础 行书楷书草书初学在线课程</view>
+  <view class="wrap clearfix">
+    <view class="pri fl">￥250.00</view>
+    <view class="collect fr">
+      <view class="collbg">
+        <image src="{{imgurl}}/images/collectbg.png"></image>
+      </view>
+      <view class="coll">
+        <view class="ico fl">
+          <image src="{{imgurl}}/images/collectico.png"></image>
+        </view>
+        <view class="text fl">收藏</view>
+      </view>
+    </view>
+  </view>
+  <view class="h-45"></view>
+</view>
+<view class="xian20"></view>
+<!--店铺-->
+<view class="store">
+  <view class="sinfo clearfix">
+    <view class="figure fl">
+      <image src="{{imgurl}}/images/allimg.jpg"></image>
+    </view>
+    <view class="wrap fl">
+      <view class="tit">宝满服务旗舰店</view>
+      <view class="describe">宝满服务旗舰店...</view>
+    </view>
+  </view>
+  <view class="h-30"></view>
+  <view class="sdl">
+    <view class="item">
+      <view class="num">1218</view>
+      <view class="text">总销量</view>
+    </view>
+    <view class="item">
+      <view class="num">1218</view>
+      <view class="text">收藏数</view>
+    </view>
+    <view class="item">
+      <view class="num">1218</view>
+      <view class="text">全部课程</view>
+    </view>
+  </view>
+  <view class="h-45"></view>
+  <view class="btn clearfix">
+    <view class="cbt btn1 fl">联系客服</view>
+    <view class="cbt btn2 fr">进店逛逛</view>
+  </view>
+</view>
+<view class="xian20"></view>
+<!--详情tab切换-->
+<view class="detailTab clearfix" bindtap="tabFun">   
+  <view class="{{tabArr.cur=='0'? 'active' : ''}}" data-id="0">图文详情</view>   
+  <view class="{{tabArr.cur=='1'? 'active' : ''}}" data-id="1">商品评价</view>   
+  <view class="{{tabArr.cur=='2'? 'active' : ''}}" data-id="2">相关推荐</view>  
+</view>   
+<!--图片详情-->
+<view class="contDetail">   
+  <view class="con-item {{tabArr.cur=='0'? 'on' : ''}}">
+    <view class="detailImg" wx:for="{{detailImg}}" wx:for-index="key" wx:key="id">
+      <view-item>
+            <image src="{{item}}" class="slide-image" width="100%" mode="widthFix"/>
+      </view-item>
+    </view>
+  </view>
+  <!--商品评价-->
+  <view class="con-item {{tabArr.cur=='1'? 'on' : ''}}">
+    <view class="evaluate" wx:for="{{evaluate}}" wx:for-index="key" wx:key="id">
+      <view-item>
+        <view class="user clearfix">
+          <view class="fl img"><image src="{{item.imgUserUrl}}"></image></view>
+          <view class="fl text"><text>{{item.userName}}</text></view>
+        </view>
+        <view class="describe"><text>{{item.userDescribe}}</text></view>
+        <view class="sai clearfix">
+          <view wx:for="{{item.certeauImg}}" wx:for-item="img" wx:key="id">
+            <image src="{{img}}"></image>
+          </view>
+        </view>
+        <view class="time"><text>{{item.time}}</text></view>
+      </view-item>
+    </view>
+  </view>
+  <!--相关推荐-->
+  <view class="con-item {{tabArr.cur=='2'? 'on' : ''}}">
+    <view class="recom clearfix">
+      <navigator class="item" wx:for="{{goodslist}}" wx:key="id" url="{{item.url}}">
+        <view class="h-40"></view>
+        <view class="figure">
+          <image src="{{item.imgsrc}}"></image>
+        </view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="pri">¥{{item.price}}</view>
+      </navigator>
+    </view>
+  </view>   
+</view>
+<!--底部-->
+<view class="h-135"></view>
+<!--底部-->
+<view class="fixedfoot">
+  <view class="h-30"></view>
+  <view class="foot clearfix">
+    <button class="section fl">
+      <view class="sf">
+        <view class="img"><image src="{{imgurl}}/images/dfootdpico.png"></image></view>
+        <view class="text">店铺</view>
+      </view>
+    </button>
+    <button class="section fl">
+      <view class="sf">
+        <view class="img"><image src="{{imgurl}}/images/dfoottelico.png"></image></view>
+        <view class="text">客服</view>
+      </view>
+    </button>
+    <view class="fr btnwr clearfix">
+      <navigator class="jrgwc fl">加入购物车</navigator>
+      <navigator class="ljgm fl">立即购买</navigator>
+    </view>
+  </view>
+  <view class="h-20"></view>
+</view>

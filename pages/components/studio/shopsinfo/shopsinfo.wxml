@@ -1,0 +1,48 @@
+<!--pages/component/shopsinfo/shopsinfo.wxml-->
+<view class="h20"></view>
+<view class="sinfow">
+  <view class="h60"></view>
+  <view class="logo">
+    <image src="{{imgrul}}/images/allimg.jpg"></image>
+  </view>
+  <view class="sname">自然堂旗舰店</view>
+  <view class="ctime">创建时间:2017年10月17日|广东省梅州市</view> 
+  <view class="numwrap">
+    <view class="item">
+      <view class="num">4128</view>
+      <view class="tit">收藏数</view>
+      <view class="rxian"></view>
+    </view>
+    <view class="item">
+      <view class="num">4128</view>
+      <view class="tit">累计销量</view>
+      <view class="rxian"></view>
+    </view>
+    <view class="item">
+      <view class="num">4128</view>
+      <view class="tit">商品数量</view>
+      <view class="rxian"></view>
+    </view>
+  </view>   
+</view>
+<view class="h20"></view>
+<!--店铺星级-->
+<view class="shopstar clearfix">
+  <text class="tit fl">店铺星级:</text>
+  <view class="xinw clearfix fl">
+    <view class="xin fl"><image src="{{imgrul}}/images/sxinxin.png"></image></view>
+    <view class="xin fl"><image src="{{imgrul}}/images/sxinxin.png"></image></view>
+    <view class="xin fl"><image src="{{imgrul}}/images/sxinxin.png"></image></view>
+    <view class="xin fl"><image src="{{imgrul}}/images/sxinxin.png"></image></view>
+    <view class="xin fl"><image src="{{imgrul}}/images/sxinxin.png"></image></view>
+  </view>
+</view>
+<view class="h20"></view>
+<!--店铺简介-->
+<view class="introduce">
+  <view class="tit">店铺简介</view>
+  <view class="text">
+    <view>自然堂(CHANDO),大自然美的发现者,从雪域中寻觅美肤灵感,针对东方女性肌肤特点,甄选大自然中的珍稀成分,运用先进科技,将亲切、自然的魅力感受贯彻到每一款补水面膜</view>
+    <view>自然堂(CHANDO),大自然美的发现者,从雪域中寻觅美肤灵感,针对东方女性肌肤特点,甄选大自然中的珍稀成分,运用先进科技,将亲切、自然的魅力感受贯彻到每一款补水面膜</view>
+  </view>
+</view>

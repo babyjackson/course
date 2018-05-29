@@ -1,0 +1,65 @@
+<!--pages/components/studio/brand/brand.wxml-->
+<!--画室排行-->
+<view class="rankw">
+  <view class="h-50"></view>
+  <view class="alltit">
+    <view class="ico fl"><image src="{{imgurl}}/images/cup.png"></image></view>
+    <view class="tit fl">画室排行</view>
+    <view class="tips fl">为您甄选最知名画室</view>
+  </view>
+  <view class="h-25"></view>
+  <view class="rank">
+    <view class="h-240"></view>
+    <view class="hbg-170"></view>
+    <view class="rankabs">
+      <view class="ranks">
+        <scroll-view scroll-x="true" class="scroll-view_H" scroll-with-animation="true">
+          <view class="scroll-view-item_H item" wx:for="{{rank}}" wx:key="id">
+            <view class="figure">
+              <image src="{{item.img}}"></image>
+            </view>
+            <view class="wrap">
+              <view class="logo">
+                <image src="{{item.logo}}"></image>
+              </view>
+              <view class="h-40"></view>
+              <view class="tit">{{item.tit}}</view>
+              <view class="text">{{item.text}}</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--推荐画室-->
+<view class="recomw">
+  <view class="h-35"></view>
+  <view class="alltit">
+    <view class="ico fl"><image src="{{imgurl}}/images/bluestar.png"></image></view>
+    <view class="tit fl">推荐画室</view>
+    <view class="tips fl">更多知名画室为你推荐</view>
+  </view>
+  <view class="h-35"></view>
+  <view class="recom">
+    <view class="con" wx:for="{{recom}}" wx:key="id">
+      <view class="fam">
+        <view class="figure fl">
+          <image src="{{item.logo}}"></image>
+        </view>
+        <view class="dl fl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="text">{{item.text}}</view>
+        </view>
+        <navigator class="go fr" url="{{item.url}}">
+          <image src="{{imgurl}}/images/studiogo.png"></image>
+        </navigator>
+      </view>
+      <view class="famabs clerfix">
+        <view class="item fl" wx:for="{{item.list}}" wx:for-item="goods" wx:key="id">
+          <image src="{{goods.img}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

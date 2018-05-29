@@ -1,0 +1,216 @@
+/* pages/components/train/trainlist/trainlist.wxss */
+.h-545{
+  height: 545rpx;
+}
+.h-100{
+  height: 100rpx;
+}
+.contopw{
+  padding: 15rpx 0;
+  background: #1ad6c9;
+  position: relative;
+}
+.contop{
+  width: 720rpx;
+  height: 580rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 1rpx 1rpx 15rpx rgba(14, 115, 108, 0.25)
+}
+.tbanner{
+ width: 720rpx;
+ height: 375rpx;
+}
+.tbanner .tban{
+  width: 720rpx;
+  height: 375rpx;
+}
+.tbanner .tban .item{
+  width: 720rpx;
+  height: 375rpx;
+}
+.tbanner .tban .item image{
+  display: block;
+  width: 720rpx;
+  height: 375rpx;
+}
+/**导航**/
+.tnav{
+  display: flex;
+  width: 720rpx;
+  height: 210rpx;
+  background: #13988f;
+}
+.tnav .item{
+  flex: 1;
+  padding: 25rpx 0;
+}
+.tnav .item .figure{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.tnav .item .figure image{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+}
+.tnav .item .text{
+  font-size: 22rpx;
+  color: #8cfff7;
+  line-height: 25rpx;
+  text-align: center;
+  margin-top: 15rpx;
+}
+.stick{
+  position: absolute;
+  bottom: -110rpx;
+  left: 15rpx;
+  width: 720rpx;
+  height: 680rpx;
+  overflow: hidden;
+}
+.stick .item{
+  width: 720rpx;
+  height: 310rpx;
+  overflow: hidden;
+  border-radius: 25rpx;
+  background: #ffffff;
+  box-shadow: 2rpx 2rpx 20rpx rgba(14, 115, 108, 0.15);
+  margin-bottom: 30rpx;
+}
+.stick .item .figure{
+  width: 250rpx;
+  height: 250rpx;
+  margin: 30rpx 25rpx;
+}
+.stick .item .figure image{
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+}
+.stick .item .dl{
+  width: 380rpx;
+  height: 250rpx;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.stick .item .dl .tit{
+  height: 180rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #5e5e5e;
+}
+.stick .item .dl .pri{
+  font-size: 36rpx;
+  color: #1bdacd;
+  font-weight: bold;
+  line-height: 55rpx;
+}
+.stick .item .dl .tips{
+  width: 110rpx;
+  height: 50rpx;
+  border:3rpx solid #1bdacd;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  color: #1bdacd;
+  line-height: 50rpx;
+  text-align: center;
+}
+/***共同模块***/
+.course{
+  position: relative;
+  width: 750rpx;
+  height: 940rpx;
+}
+.course .bgcourse{
+  width: 680rpx;
+  height: 675rpx;
+}
+.course .bgcourse image{
+  display: block;
+  width: 680rpx;
+  height: 675rpx;
+}
+.course .courselist{
+  position: absolute;
+  width: 720rpx;
+  top: 0;
+  left: 30rpx;
+}
+.course .courselist .item{
+  height: 430rpx;
+  width: 335rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-top: 30rpx;
+  box-shadow: 2rpx 2rpx 15rpx rgba(14, 115, 108, 0.15);
+}
+.course .courselist .item:nth-of-type(odd){
+  float: left;
+  margin-left: 15rpx;
+}
+.course .courselist .item:nth-of-type(even){
+  float: right;
+  margin-right: 15rpx;
+}
+.course .courselist .item .figure{
+  width: 250rpx;
+  height: 250rpx;
+  padding-top: 35rpx;
+  margin: 0 auto;
+}
+.course .courselist .item .figure image{
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+}
+.course .courselist .item .tit{
+  width: 250rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  font-size: 22rpx;
+  color: #5e5e5e;
+  overflow: hidden;
+  margin: 15rpx auto 0;
+}
+.course .courselist .item .pri{
+  margin-top: 10rpx;
+  line-height: 40rpx;
+  font-size: 36rpx;
+  color: #1bdacd;
+  font-weight: bold;
+  text-align: center;
+}
+.alltit{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #1bdacd;
+  font-weight: bold;
+  text-indent: 15rpx;
+}
+.alltit text{
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #1bdacd;
+  font-weight: bold;
+  text-indent: 15rpx;
+}
+.alltit .ico{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+.alltit .ico image{
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}

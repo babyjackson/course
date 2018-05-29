@@ -1,0 +1,44 @@
+/* pages/components/btob//status/status.wxss */
+.h-130{
+  height: 130rpx;
+}
+.h-20{
+  height: 20rpx;
+}
+.h-60{
+  height: 60rpx;
+}
+.h-30{
+  height: 30rpx;
+}
+.figure1{
+  width: 300rpx;
+  height: 300rpx;
+  margin: 0 auto;
+}
+.figure1 image{
+  display: block;
+  width: 300rpx;
+  height: 300rpx;
+}
+.tit{
+  font-size: 34rpx;
+  color: #282828;
+  text-align: center;
+  line-height: 40rpx;
+}
+.tips{
+  font-size: 26rpx;
+  color: #8b8b8b;
+  text-align: center;
+}
+.figure2{
+  width: 210rpx;
+  height: 210rpx;
+  margin: 0 auto;
+}
+.figure2 image{
+  display: block;
+  width: 210rpx;
+  height: 210rpx;
+}

@@ -1,0 +1,45 @@
+<!--pages/components/news/newslist/newslist.wxml-->
+<view class="newsban">
+  <swiper class="ban" indicator-dots="true" indicator-color="#eeeeee" indicator-active-color="#1bdacd" circular="true">
+    <block wx:for="{{newsban}}" wx:key="id">
+      <swiper-item>
+        <view class="item">
+          <view class="figure">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="dl">
+            <view class="tit">{{item.tit}}</view>
+            <view class="text">{{item.text}}</view>
+          </view>
+        </view>
+        <view class="h-75"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--新闻列表-->
+<view class="newslist">
+  <navigator class="item" wx:for="{{newslist}}" wx:key="id" url="{{item.url}}">
+    <view class="figure fl">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="dl fl">
+      <view class="tit">{{item.tit}}</view>
+      <view class="text">{{item.text}}</view>
+      <view class="h-40"></view>
+      <view class="dd clearfix">
+        <view class="coll fl">
+          <view class="ico fl"><image src="{{imgurl}}/images/love@30rpx.png"></image></view>
+          {{item.coll}}
+        </view>
+        <view class="glance fl">
+          <view class="ico fl">
+            <image src="{{imgurl}}/images/eyes@30rpx.png"></image>
+          </view>
+          {{item.glance}}
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <view class="loadmore">加载更多</view>
+</view>
